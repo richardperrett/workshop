@@ -1,0 +1,17 @@
+{
+  "name": "workshop2",
+  "version": "0.0.1",
+  "description": "Tha application that I use to handle the management of my watch repair activities.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Perrett",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.8",
+    "path": "^0.12.7"
+  }
+}
