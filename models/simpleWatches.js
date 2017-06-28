@@ -11,4 +11,4 @@ var simpleWatchSchema = new Schema({
    
 });
 
-const TimePiece = module.exports = mongoose,model('TimePiece', simpleWatchSchema);
+const TimePiece = module.exports = mongoose.model('TimePiece', simpleWatchSchema);
