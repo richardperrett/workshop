@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import {Http, Headers} from '@angular/http';
+import {HttpModule} from '@angular/http';
 import {Timepiece} from './timepiece';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class TimepieceService {
+export class timepieceService {
 
   constructor(private http: Http) { }
 
@@ -13,7 +14,7 @@ export class TimepieceService {
    getTimepieces()
    {
    
-   return this.http.get('http://localhost:3000/api/timepieces')
+   return this.http.get('http://localhost:3000/api/pieces')
     .map(res => res.json());
 
    }

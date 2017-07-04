@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {TimepieceService} from '../timepiece.service';
-import {Timepiece} from '../timepiece';
+import {timepieceService} from '../timepiece.service';
+import { Timepiece } from '../timepiece';
+import { HttpModule } from "@angular/http";
 
 @Component({
   selector: 'app-timepieces',
   templateUrl: './timepieces.component.html',
   styleUrls: ['./timepieces.component.css'],
-  providers: [TimepieceService]
+  providers: [timepieceService, HttpModule]
 })
 export class TimepiecesComponent implements OnInit {
 
@@ -17,7 +18,7 @@ export class TimepiecesComponent implements OnInit {
   calibre: String;
   case: String; 
 
-  constructor(private timepieceService: TimepieceService) { }
+  constructor(private timepieceService: timepieceService) { }
 
   ngOnInit() {
   

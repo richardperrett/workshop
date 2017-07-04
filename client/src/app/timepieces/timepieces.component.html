@@ -1,3 +1,15 @@
-<p>
-  timepieces works!
-</p>
+<div class="container">
+  <div *ngFor = "let timepiece of timepieces">
+    <div class="col-md-3">
+      {{timepiece.pieceID}}
+    </div> 
+    <div class="col-md-3">
+      {{timepiece.make}}
+    </div> 
+    <div class="col-md-3">
+      {{timepiece.caliber}}
+    </div> 
+    <div class="col-md-3">
+      {{timepiece.case}}
+    </div>
+</div> 
